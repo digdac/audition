@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>한국대학교 웹사이트 제작</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+function clickEffect(e){
+  var d=document.createElement("div");
+  d.className="clickEffect";
+  d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+  document.body.appendChild(d);
+  d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+}
+document.addEventListener('click',clickEffect);
+</script>
+</head>
+
+<body>
+
+
+<div class="wrapper">
+	<header id="header">
+		<div class="logo">
+			<h1 id="logo"><a href="#"><img src="images/logo.png"></a></h1>
+		</div>
+		<div class="menu">
+			<nav id="gnb">
+				<ul>
+					<li>
+						<a href="#">딕닥</a>
+					</li>
+					<li>
+						<a href="#">콘텐츠 소개</a>
+						<ul>
+							<li><a href="#">오디오</a></li>
+							<li><a href="#">유튜브</a></li>
+							<li><a href="#">광고</a></li>
+							<li><a href="#">실용사진</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">프로필</a>
+						<ul>
+							<li><a href="#">정보</a></li>
+							<li><a href="#">연락처</a></li>
+							<li><a href="#">관련</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="main_image">
+		<div class="title">
+			<h2>한강미디어고등학교 김상민의 포트폴리오입니다.</h2>
+		</div>
+		<div class="image">
+			<ul>
+				<li><img src="images/image1.png"></li>
+				<li><img src="images/image2.png"></li>
+				<li><img src="images/image3.png"></li>
+				<li><img src="images/image1.png"></li>
+				<li><img src="images/image2.png"></li>
+				<li><img src="images/image3.png"></li>
+			</ul>
+		</div>
+	</div>
+	<section id="contents">
+		<div class="up">
+			<div class="notice">
+				<h3>포트폴리오</h3>
+				<div class="table1">
+					<table>
+                        <nav id="navigation">
+                            <div class="container">
+                                <div id="responsive-nav">
+                                    <!-- NAV -->
+                                    <tr class="main-nav nav navbar-nav">
+                                        <td><a href="#">자율동아리영상</a></td>
+                                        <td class="date">2021-11-03</td>
+                                    </tr>
+                                    <!-- NAV -->
+                                    <tr class="main-nav nav navbar-nav">  
+                                        <td><a href="#">지인 영상 편집</a></td>
+                                        <td class="date">2021-10-31</td>
+                                    </tr>
+                                    <!-- NAV -->
+                                    <tr class="main-nav nav navbar-nav">
+                                        <td><a href="#">마스크로 들려주는 우리들의 이야기</a></td>
+                                        <td class="date">2021-10-25</td>
+                                    </tr>
+                                    <!-- NAV -->
+                                    <tr class="main-nav nav navbar-nav">
+                                        <td><a href="#">믹싱 작업</a></td>
+                                        <td class="date">2021-10-20</td>
+                                    </tr>
+                                    <!-- NAV -->
+                                    <tr class="main-nav nav navbar-nav">
+                                        <td><a href="#">10시간 동안 만든 몬스터타워</a></td>
+                                        <td class="date">2021-08-31</td>
+                                    </tr>
+                                    <tr class="main-nav nav navbar-nav">
+                                        <td><a href="#">밸런스게임으로 인터뷰를 해보았다</a></td>
+                                        <td class="date">2021-05-11</td>
+                                    </tr>
+                                </div>
+                            </div>
+                        </nav>
+					</table>
+				</div>
+			</div>
+			<div class="partner">
+				<h3>채널</h3>
+				<ul>
+					<li><a href="https://www.twitch.tv/digedage"><img src="images/slogan.jpg"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCdrijl8H4Xl1MwOutIjXjuA"><img src="images/partner.jpg"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="down">
+			<div class="banner">
+				<h3>아이콘 콘텐츠 주요메뉴</h3>
+				<ul>
+					<li><a href="#">개인영상</a></li>
+					<li><a href="#">공모전수상내역</a></li>
+					<li><a href="#">개인 관련 능력</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="top">
+			<ul>
+				<li><a href="">법적고지</a></li>
+				<li><a href="">개인정보취급방침</a></li>
+				<li><a href="">개인정보처리방침</a></li>
+			</ul>
+		</div>
+		<div class="bottom">
+			<p>
+				<span>연락처:010-3950-7639</span>
+				<span>채널명:딕닥</span>
+				<span>이름:김상민</span>
+			</p>
+			<p>
+				<span>유튜브주소:https://www.youtube.com/channel/UCdrijl8H4Xl1MwOutIjXjuA</span>
+			</p>
+			<p>
+                <span>E-mail:apap12pq@gmail.com</span>
+			</p>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
